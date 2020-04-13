@@ -17,6 +17,7 @@ module.exports.loop = function () {
   for (let name in Game.creeps) {
     // get the creep object
     var creep = Game.creeps[name];
+
     // if creep is harvester, call harvester script
     if (creep.memory.role == "harvester") {
       roleHarvester.run(creep);
